@@ -68,67 +68,160 @@
            <!-- end header inner --> 
         </header>
         <!-- end header -->
+        <br>
+        <br>
          <div class="container">
-             <div id="titulo" class="titulo">
-                 <div class="row">
-                    <div class="col-md-12">
-                       <div class="titlepage">
-                          <h2>Requerimientos de Servicio</h2>
+            <div class="container">
+                <div id="titulo" class="titulo">
+                    <div class="row">
+                       <div class="col-md-12">
+                          <div class="titlepage">
+                             <h2>Requerimientos de Servicio</h2>
+                          </div>
                        </div>
                     </div>
-                 </div>
-              </div>  
+                 </div>  
+            </div>        
+               <!-- Editar mas tarde js --> 
+               <form action="" class="formulario" id="formulario">
+                  <!-- Grupo: primer_nombre -->
+                  <div class="formulario__grupo" id="grupo__primer__nombre">
+                     <label for="primer__nombre" class="formulario__label">primer nombre</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="primer__nombre" id="primer__nombre" placeholder="Pepito">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">el primer nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
+                  </div>
+            
+                  <!-- Grupo: segundo_nombre -->
+                  <div class="formulario__grupo" id="grupo__segundo__nombre">
+                     <label for="segundo__nombre" class="formulario__label">segundo nombre</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="segundo__nombre" id="segundo__nombre" placeholder="Arnoldo">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">el segundo nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
+                  </div>
+            
+                  <!-- Grupo: primer_apellido -->
+                  <div class="formulario__grupo" id="grupo__primer__apellido">
+                     <label for="primer__apellido" class="formulario__label">primer apellido</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="primer__apellido" id="primer__apellido" placeholder="Pérez">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">el primer apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
+                  </div>
+            
+                  <!-- Grupo: segundo_apellido -->
+                  <div class="formulario__grupo" id="grupo__segundo__apellido">
+                     <label for="segundo__apellido" class="formulario__label">segundo apellido</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="segundo__apellido" id="segundo__apellido" placeholder="San Martín">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">el primer apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
+                  </div>
+            
+                  <!-- Grupo: edad -->
+                  <div class="formulario__grupo" id="grupo__edad">
+                     <label for="edad" class="formulario__label">edad</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="edad" id="edad" placeholder="">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">La edad solo puede contener numeros y un maximo de 3 dígitos.</p>
+                  </div>
+            
+                  <!-- Grupo: Correo Electronico -->
+                  <div class="formulario__grupo" id="grupo__correo">
+                     <label for="correo" class="formulario__label">Correo Electrónico</label>
+                     <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                  </div>
+            
+                  <!-- Grupo: Teléfono -->
+                  <div class="formulario__grupo" id="grupo__telefono">
+                     <label for="telefono" class="formulario__label">Teléfono</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                  </div>
+            
+                  <!-- Grupo: Terminos y Condiciones -->
+                  <div class="formulario__grupo" id="grupo__terminos">
+                     <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                     </label>
+                  </div>
+            
+                  <div class="formulario__mensaje" id="formulario__mensaje">
+                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                  </div>
+            
+                  <div class="formulario__grupo formulario__grupo-btn-enviar">
+                     <button type="submit" class="formulario__btn">Enviar</button>
+                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                  </div>
+               </form>
          </div>
+         <br>
          <hr>
-        <div class="container">
-            <!-- Editar mas tarde js --> 
-            <form action="formularios-fieldset-1.php" method="get">
-                <fieldset>
-                  <legend>Datos personales</legend>
-                  <p>Primer Nombre: <input type="text" name="nombre" size="30"></p><br>
+         <br>
+               <div class="container">
+                  <div class="container">
+                      <div id="titulo" class="titulo">
+                          <div class="row">
+                             <div class="col-md-12">
+                                <div class="titlepage">
+                                   <h2>Registrarse</h2>
+                                </div>
+                             </div>
+                          </div>
+                       </div>  
+                  </div>
+                     <form>
+                        <legend>Datos empresa</legend>
 
-                  <p>Segundo Nombre: <input type="text" name="nombre" size="30"></p><br>
+                        <label for="name">Nombre de la Empresa</label><br>
+                        
+                        <input type="text" name="nombre" size="30"><br>
 
-                  <p>Primer Apellido: <input type="text" name="nombre" size="30"></p><br>
+                        <label for="name">Rut Empresa</label><br>
 
-                  <p>Segundo Apellido: <input type="text" name="nombre" size="30"></p><br>
-            
-                  <p>Edad: <input type="number" name="edad"></p><br>
+                        <input type="text" name="nombre" size="30"><br>
 
-                  <p>Correo contacto <input type="email" name="correo" size="40"></p><br>
+                        <!-- Editar mas tarde js --> 
+                        <label for="seleccion">Seleccion de Servicio requerido</label><br>
+                        <select name="seleccion" id="seleccion" size="3">
+                        <option value="1">Toxicología Ambiental</option>
+                        <option value="2">Tratamientos de Aguas Residuales</option>
+                        <option value="3">Aislamiento Microorganismos</option>
+                        <option value="4">Producción de proteínas recombinantes</option>
+                        <option value="5">Remediación de suelos</option>
+                        <option value="6">Procesadores Lacteos</option>
+                        <option value="7">Caracterización de Suelos Contaminados</option>
+                        <option value="8">Análisis Físico Químico</option>
+                     
+                        </select>
 
-                  <p>Telefono contacto <input type="tel" name="telefono"></p><br>
-                </fieldset>
-                <hr>
-                <fieldset>
-                  <legend>Datos empresa</legend>
+                     <br><br>
+                     <label for="mensaje">Descripción del servicio requerido</label><br>
+                     <textarea cols="80" rows="5" id="mensaje" name="mensaje"></textarea>
 
-                  <p>Nombre Empresa: <input type="text" name="nombre" size="30"></p><br>
+                     <p><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p><br>
+                  </form>
+            </div>
 
-                  <p>Rut Empresa: <input type="text" name="nombre" size="30"></p><br>
-                    <!-- Editar mas tarde js --> 
-                  <label for="alimento3">Seleccion de Servicio requerido</label><br>
-                  <select name="alimento3" id="alimento3" size="3">
-                    <option value="1">Toxicología Ambiental</option>
-                    <option value="2">Tratamientos de Aguas Residuales</option>
-                    <option value="3">Aislamiento Microorganismos</option>
-                    <option value="4">Producción de proteínas recombinantes</option>
-                    <option value="5">Remediación de suelos</option>
-                    <option value="6">Procesadores Lacteos</option>
-                    <option value="7">Caracterización de Suelos Contaminados</option>
-                    <option value="8">Análisis Físico Químico</option>
-                
-                    </select>
-            
-                </fieldset>
-
-                <br><br>
-                <label for="mensaje">Descripción del servicio requerido</label><br>
-                <textarea cols="80" rows="5" id="mensaje" name="mensaje"></textarea>
-
-                <p><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p><br>
-              </form>
-        </div>
+        
+        
         <div class="container"></div>          
         <!--  footer --> 
         <footr>
@@ -168,6 +261,7 @@
             </div>
         </footr>
         <!-- end footer -->
+        <script src="js/validar-i4.js"></script>
         <script src="js/jquery.min.js"></script> 
         <script src="js/popper.min.js"></script> 
         <script src="js/bootstrap.bundle.min.js"></script> 
@@ -176,6 +270,7 @@
         <!-- sidebar --> 
         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
         <script src="js/custom.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script>
            $(document).ready(function(){
