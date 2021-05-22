@@ -3,20 +3,24 @@ const inputs = document.querySelectorAll('#formulario input');
 
 
 const expresiones ={
-    primer_nombre: /^[a-zA-ZÀ-ÿ]{1,40}$/, //verificar si la \s era el espacio...
-    segundo_nombre: /^[a-zA-ZÀ-ÿ]{1,40}$/, //verificar si la \s era el espacio...
-    primer_apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    segundo_apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    primer__nombre: /^[a-zA-ZÀ-ÿ]{1,40}$/, //verificar si la \s era el espacio...
+    segundo__nombre: /^[a-zA-ZÀ-ÿ]{1,40}$/, //verificar si la \s era el espacio...
+    primer__apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    segundo__apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	nom__emp: /^[a-zA-ZÀ-ÿ.\s]{1,40}$/,
+	rut__emp: /^\d{8,9}$/,
     edad: /^\d{1,3}$/, 
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/
 }
 
 const campos = {
-	primer_nombre: false,
-	segundo_nombre: false,
-	primer_apellido: false,
-	segundo_apellido: false,
+	primer__nombre: false,
+	segundo__nombre: false,
+	primer__apellido: false,
+	segundo__apellido: false,
+	nom__emp: false,
+	rut__emp: false,
 	edad: false,
     correo: false,
     telefono: false
@@ -25,16 +29,22 @@ const campos = {
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "primer__nombre":
-			validarCampo(expresiones.primer_nombre, e.target, 'primer__nombre');
+			validarCampo(expresiones.primer__nombre, e.target, 'primer__nombre');
 		break;
 		case "segundo__nombre":
-			validarCampo(expresiones.segundo_nombre, e.target, 'segundo__nombre');
+			validarCampo(expresiones.segundo__nombre, e.target, 'segundo__nombre');
 		break;
         case "primer__apellido":
-			validarCampo(expresiones.primer_apellido, e.target, 'primer__apellido');
+			validarCampo(expresiones.primer__apellido, e.target, 'primer__apellido');
 		break;
         case "segundo__apellido":
-			validarCampo(expresiones.segundo_apellido, e.target, 'segundo__apellido');
+			validarCampo(expresiones.segundo__apellido, e.target, 'segundo__apellido');
+		break;
+		case "nom__emp":
+			validarCampo(expresiones.nom__emp, e.target, 'nom__emp');
+		break;
+		case "rut__emp":
+			validarCampo(expresiones.rut__emp, e.target, 'rut__emp');
 		break;
 		case "edad":
 			validarCampo(expresiones.edad, e.target, 'edad');
@@ -76,7 +86,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.primer_nombre && campos.segundo_nombre && campos.primer_apellido && campos.segundo_apellido && campos.correo && campos.telefono && terminos.checked ){
+	if(campos.primer__nombre && campos.segundo__nombre && campos.primer__apellido && campos.segundo__apellido && campos.nom__emp && campos.rut__emp &&campos.edad && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
@@ -91,3 +101,24 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+function validar()
+{	
+	serv = document.getElementById('servicio').selectedIndex;
+	text = document.getElementById('texto').value;
+	
+	if ( serv == null ||serv == 0 )
+	{
+		alert('Seleccione un servicio');
+		document.datos.servicio.focus();
+		return false;
+	}
+	if(text==null || text.length==0)
+	{
+		alert('Agregue una breve descripcion');
+		document.getElementById('texto').value="";
+		document.datos.text.focus();
+		return false;		
+	}
+	return true
+}

@@ -86,47 +86,47 @@
                <form action="" class="formulario" id="formulario">
                   <!-- Grupo: primer_nombre -->
                   <div class="formulario__grupo" id="grupo__primer__nombre">
-                     <label for="primer__nombre" class="formulario__label">primer nombre</label>
+                     <label for="primer__nombre" class="formulario__label">Primer nombre</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="primer__nombre" id="primer__nombre" placeholder="Pepito">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                      </div>
-                     <p class="formulario__input-error">el primer nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
+                     <p class="formulario__input-error">El primer nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
                   </div>
             
                   <!-- Grupo: segundo_nombre -->
                   <div class="formulario__grupo" id="grupo__segundo__nombre">
-                     <label for="segundo__nombre" class="formulario__label">segundo nombre</label>
+                     <label for="segundo__nombre" class="formulario__label">Segundo nombre</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="segundo__nombre" id="segundo__nombre" placeholder="Arnoldo">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                      </div>
-                     <p class="formulario__input-error">el segundo nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
+                     <p class="formulario__input-error">El segundo nombre debe ser de 1 a 40 dígitos y solo puede contener letras.</p>
                   </div>
             
                   <!-- Grupo: primer_apellido -->
                   <div class="formulario__grupo" id="grupo__primer__apellido">
-                     <label for="primer__apellido" class="formulario__label">primer apellido</label>
+                     <label for="primer__apellido" class="formulario__label">Primer apellido</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="primer__apellido" id="primer__apellido" placeholder="Pérez">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                      </div>
-                     <p class="formulario__input-error">el primer apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
+                     <p class="formulario__input-error">El primer apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
                   </div>
             
                   <!-- Grupo: segundo_apellido -->
                   <div class="formulario__grupo" id="grupo__segundo__apellido">
-                     <label for="segundo__apellido" class="formulario__label">segundo apellido</label>
+                     <label for="segundo__apellido" class="formulario__label">Segundo apellido</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="segundo__apellido" id="segundo__apellido" placeholder="San Martín">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                      </div>
-                     <p class="formulario__input-error">el primer apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
+                     <p class="formulario__input-error">El segundo apellido debe ser de 1 a 40 dígitos, puede contener un espacio.</p>
                   </div>
             
                   <!-- Grupo: edad -->
                   <div class="formulario__grupo" id="grupo__edad">
-                     <label for="edad" class="formulario__label">edad</label>
+                     <label for="edad" class="formulario__label">Edad</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="edad" id="edad" placeholder="">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -146,15 +146,33 @@
             
                   <!-- Grupo: Teléfono -->
                   <div class="formulario__grupo" id="grupo__telefono">
-                     <label for="telefono" class="formulario__label">Teléfono</label>
+                     <label for="   " class="formulario__label">Teléfono</label>
                      <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                      </div>
                      <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
                   </div>
-            
+                  <!-- Grupo: Nombre de la empresa -->                        
+                  <div class="formulario__grupo" id="grupo__nom__emp">
+                     <label for="nom__emp" class="formulario__label">Nombre de la empresa</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nom__emp" id="nom__emp">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">El solo nombre debe ser de 1 a 30 dígitos y solo puede contener letras y puntos.</p>
+                  </div>
+                  <!-- Grupo: Rut de la empresa --> 
+                  <div class="formulario__grupo" id="grupo__rut__emp">
+                     <label for="rut__emp" class="formulario__label">Rut de la empresa</label>
+                     <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="rut__emp" id="rut__emp">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     </div>
+                     <p class="formulario__input-error">Sin puntos ni guión.</p>
+                  </div>                
                   <!-- Grupo: Terminos y Condiciones -->
+                  <br>
                   <div class="formulario__grupo" id="grupo__terminos">
                      <label class="formulario__label">
                         <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
@@ -165,64 +183,39 @@
                   <div class="formulario__mensaje" id="formulario__mensaje">
                      <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                   </div>
-            
+                  
                   <div class="formulario__grupo formulario__grupo-btn-enviar">
                      <button type="submit" class="formulario__btn">Enviar</button>
                      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                   </div>
                </form>
          </div>
-         <br>
          <hr>
-         <br>
-               <div class="container">
-                  <div class="container">
-                      <div id="titulo" class="titulo">
-                          <div class="row">
-                             <div class="col-md-12">
-                                <div class="titlepage">
-                                   <h2>Registrarse</h2>
-                                </div>
-                             </div>
-                          </div>
-                       </div>  
-                  </div>
-                     <form>
-                        <legend>Datos empresa</legend>
+         <div class="container">
+            <form action="" method="post" name="datos" onsubmit="return validar()">
+            <label for="opcion" class="formulario__label">Seleccion de Servicio requerido</label>
 
-                        <label for="name">Nombre de la Empresa</label><br>
-                        
-                        <input type="text" name="nombre" size="30"><br>
+            <select name="opcion" class="formulario__input" id="servicio">
+            <option value="">- Selecciona una opción -</option>
+            <option value="1">Toxicología Ambiental</option>
+            <option value="2">Tratamientos de Aguas Residuales</option>
+            <option value="3">Aislamiento Microorganismos</option>
+            <option value="4">Producción de proteínas recombinantes</option>
+            <option value="5">Remediación de suelos</option>
+            <option value="6">Procesadores Lacteos</option>
+            <option value="7">Caracterización de Suelos Contaminados</option>
+            <option value="8">Análisis Físico Químico</option>
+         
+            </select>
 
-                        <label for="name">Rut Empresa</label><br>
+               <br><br>
+               <label for="texto" class="formulario__label">Descripción del servicio requerido</label>
+               <br>
+               <textarea cols="80" rows="5" id="texto" name="text"></textarea>
 
-                        <input type="text" name="nombre" size="30"><br>
-
-                        <!-- Editar mas tarde js --> 
-                        <label for="seleccion">Seleccion de Servicio requerido</label><br>
-                        <select name="seleccion" id="seleccion" size="3">
-                        <option value="1">Toxicología Ambiental</option>
-                        <option value="2">Tratamientos de Aguas Residuales</option>
-                        <option value="3">Aislamiento Microorganismos</option>
-                        <option value="4">Producción de proteínas recombinantes</option>
-                        <option value="5">Remediación de suelos</option>
-                        <option value="6">Procesadores Lacteos</option>
-                        <option value="7">Caracterización de Suelos Contaminados</option>
-                        <option value="8">Análisis Físico Químico</option>
-                     
-                        </select>
-
-                     <br><br>
-                     <label for="mensaje">Descripción del servicio requerido</label><br>
-                     <textarea cols="80" rows="5" id="mensaje" name="mensaje"></textarea>
-
-                     <p><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p><br>
-                  </form>
-            </div>
-
-        
-        
-        <div class="container"></div>          
+               <input type="submit" value="Enviar Datos">
+            </form>
+         </div>
         <!--  footer --> 
         <footr>
             <div class="footer">
