@@ -113,7 +113,7 @@ function validar()
 		document.datos.servicio.focus();
 		return false;
 	}
-	if(text==null || text.length==0)
+	if( text==null || text.length ==0 )
 	{
 		alert('Agregue una breve descripcion');
 		document.getElementById('texto').value="";
