@@ -40,6 +40,23 @@ html {
 	scroll-behavior: smooth;
 }
 
+#caja{
+    width: 550px;
+    border: 15px solid #38c8a8;
+    padding: 20px;
+    margin: 20px;
+}
+.formulario__input2 {
+	width: 100%;
+	background: #fff;
+	border: 10px solid transparent;
+	border-radius: 10px;
+	height: 200px;
+	line-height: 20px;
+	padding: 0 5px 0 10px;
+	transition: .3s ease all;
+}
+
 .fondo {
 		padding-top: 90px;
 		padding-bottom: 90px;
@@ -2034,7 +2051,7 @@ input[type="radio"] .styled:checked+label::after {
   .text1 {
 	color: white;
 	font-size: 20px;
-	position: absolute;
+	position: relative;
 	top: 10%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -2045,13 +2062,13 @@ input[type="radio"] .styled:checked+label::after {
   .text2 {
 	color: white;
 	font-size: 15px;
-	position: absolute;
-	top: 55%;
+	position: relative;
+	top: 40%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	text-align: justify;
+	text-align: center;
   }
   
 /** end service section **/

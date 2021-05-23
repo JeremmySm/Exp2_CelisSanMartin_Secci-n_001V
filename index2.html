@@ -58,7 +58,7 @@
                                 <li> <a href="index2.html">Quienes somos</a> </li>
                                 <li> <a href="index3.html"> Galería y Servicios</a> </li>
                                 <li> <a href="index.html #download"> información</a> </li>
-                                <li class="mean-last"> <a href="#"><img src="img/search_icon.png" alt="#" /></a> </li>
+                                <li class="mean-last"> <a href="index5.html"><img src="img/login.jfif" width="30" height="30" alt="#" /></a> </li>
                              </ul>
                           </nav>
                        </div>
@@ -89,8 +89,8 @@
           <div class="container">   
             <div class="row">       
               <div class="col-md">        
-                  <div class="card">
-                    <img class="card-img-top" src="img/objetivo (1).jpg">            
+                  <div class="card" onsubmit=bigImg(),normalImg()>
+                    <img class="card-img-top" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/objetivo (1).jpg" width="531px" height="673px">            
                     <div class="card-body">
                       <h1 class="card-title">Objetivos</h1>
                       <p class="card-text">Ser.Bio tiene como objetivo ayudar a solucionar problemas de manera eficiente y ecológica, con el fin de contribuir al desarrollo científico y social. </p>
@@ -106,11 +106,12 @@
                       <p class="card-text">Con el paso del tiempo Ser.Bio se ha convertido en una empresa muy influyente en el desarrollo científico de todo chile, es por esto que hoy nos proponemos a ser la empresa biotecnológica más grande de todo el país. </p>
 
                     </div>
-                    <img class="card-img-bottom" src="img/quienessomos (1).jpg">                        
+                    <img class="card-img-bottom" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/quienessomos (1).jpg" width="531px" height="673px">                        
                   </div>          
               </div>
             </div>
-          </div>  
+          </div>
+
           <br>
           <br>
           <br>      
@@ -232,6 +233,12 @@
                        <button class="submit-btn">Suscribete</button>
                     </div>
                  </div>
+                 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 width">
+                  <div class="address">
+                     <h3>Dias no laborales </h3>
+                     <a href="index6.html"class="submit-btn">Revisa aquí</a>
+                  </div>
+               </div>
               </div>
            </div>
            <div class="copyright">
@@ -241,6 +248,7 @@
      </footr>
      <!-- end footer -->
      <!-- Javascript files--> 
+     <script src="js/funciones.js"></script>
      <script src="js/jquery.min.js"></script> 
      <script src="js/popper.min.js"></script> 
      <script src="js/bootstrap.bundle.min.js"></script> 
